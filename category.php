@@ -10,7 +10,6 @@ if(isset($_SESSION['user_id'])){
    $user_id = '';
 };
 
-include 'components/wishlist_cart.php';
    $select_cat = $conn->prepare("SELECT * FROM `categories` WHERE id = ?");
    $select_cat->execute([$_GET['category']]);
    $row = $select_cat->fetch(PDO::FETCH_ASSOC);

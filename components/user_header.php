@@ -13,30 +13,28 @@
 
 <header class="header">
 
-   <section class="flex">
+   <section class="flex" style="background:rgba(0, 0, 0, .9); ">
 
-      <a href="home.php" class="logo">Ecommerce<span></span></a>
+      <a href="home.php" class="logo text-white">Ecommerce<span></span></a>
 
       <nav class="navbar">
-         <a href="home.php"> HOME</a>
-         <a href="about.php">ABOUT</a>
-         <a href="orders.php">ORDERS</a>
-         <a href="shop.php">SHOP</a>
-         <a href="contact.php">CONTACT</a>
+         <a href="home.php" class="text-white"> HOME</a>
+         <a href="about.php" class="text-white">ABOUT</a>
+         <a href="orders.php" class="text-white">ORDERS</a>
+         <a href="shop.php" class="text-white">SHOP</a>
+         <a href="contact.php" class="text-white">CONTACT</a>
       </nav>
 
       <div class="icons">
          <?php
-           
-
             $count_cart_items = $conn->prepare("SELECT * FROM `cart` WHERE user_id = ?");
             $count_cart_items->execute([$user_id]);
             $total_cart_counts = $count_cart_items->rowCount();
          ?>
          <div id="menu-btn" class="fas fa-bars"></div>
-         <a href="search_page.php"><i class="fas fa-search"></i></a>
+         <a href="search_page.php"><i class="fas fa-search text-white"></i></a>
         &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;<a class="text-primary" href="cart.php" style="position: relative;"><i class="fas fa-shopping-cart"></i><span>&nbsp;<span class="bg-primary text-white text-small" style="font-size: 13px; margin-top: -3px; position: absolute;top: 8px;padding:2px 3px 0; border-radius: 5px;" ><?= $total_cart_counts; ?></span></span></a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-         <div id="user-btn" class="fas fa-user "></div>
+         <div id="user-btn" class="fas fa-user  text-white"></div>
       </div>
 
       <div class="profile">

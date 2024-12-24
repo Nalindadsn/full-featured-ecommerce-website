@@ -9,6 +9,7 @@ if(isset($_SESSION['user_id'])){
 }else{
    $user_id = '';
 };
+include 'components/wishlist_cart.php';
 
 
 ?>
@@ -51,20 +52,20 @@ if(isset($_SESSION['user_id'])){
    
 <?php include 'components/user_header.php'; ?>
 
-<div class="home-bg">
+<div class="home-bg1">
 
 <section class="home " style="box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.1);>
 
 <div class="container">
   <div class="row">
     <div class="col-sm-4"><br><br><br>
-      <h1 class=" pt-20" style="padding-top:100px; font-size: 40px;">WELCOME TO ECOMMERCE WEBSITE</h1>
+      <h1 class="text-white pt-20" style="padding-top:100px; font-size: 40px; text-shadow: 3px 3px 3px rgba(0, 0, 0,.7);">WELCOME TO ECOMMERCE WEBSITE</h1>
     </div>
     <div class="col-sm-8 other">
       
 
 
-   <div class="swiper home-slider">
+   <div class="swiper home-slider " style="background: rgba(0, 0, 0, 0.4); border:1px solid #555 ">
    
    <div class="swiper-wrapper">
 

@@ -613,13 +613,13 @@ section{
    display: none;
 }
 
-.home-bg{
-   background:url(../images/home-bg.png) no-repeat;
+.home-bg1{
+   background:url(../images/home-bg1.jpg) no-repeat;
    background-size: cover;
    background-position: center;
 }
 
-.home-bg .home .slide{
+.home-bg1 .home .slide{
    display: flex;
    align-items: center;
    flex-wrap: wrap;
@@ -629,33 +629,33 @@ section{
    user-select: none;
 }
 
-.home-bg .home .slide .image{
+.home-bg1 .home .slide .image{
    flex:1 1 40rem;
 }
 
-.home-bg .home .slide .image img{
+.home-bg1 .home .slide .image img{
    height: 40rem;
    width: 100%;
    object-fit: contain;
 }
 
-.home-bg .home .slide .content{
+.home-bg1 .home .slide .content{
    flex:1 1 40rem;
 }
 
-.home-bg .home .slide .content span{
+.home-bg1 .home .slide .content span{
    font-size: 2rem;
    color:var(--white);
 }
 
-.home-bg .home .slide .content h3{
+.home-bg1 .home .slide .content h3{
    margin-top: 1rem;
    font-size: 4rem;
    color:var(--white);
    text-transform: uppercase;
 }
 
-.home-bg .home .slide .content .btn{
+.home-bg1 .home .slide .content .btn{
    display: inline-block;
    width: auto;
 }
@@ -1405,11 +1405,11 @@ section{
       margin:2rem;
    }
 
-   .home-bg .home .slide .content{
+   .home-bg1 .home .slide .content{
       text-align: center;
    }
 
-   .home-bg .home .slide .content h3{
+   .home-bg1 .home .slide .content h3{
       font-size: 3rem;
    }
 
